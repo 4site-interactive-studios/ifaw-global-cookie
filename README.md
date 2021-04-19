@@ -4,7 +4,11 @@ Creates a Cross-Domain Cookie with the name "IfawSignedUp" to supress IFAW light
 
 ## How to use
 
-You only need to add the file `` to the page.
+You only need to add this script to the page:
+
+```javascript
+<script src="https://s3.amazonaws.com/ifaw-4site/global-cookie/global-cookie.js">
+```
 
 ## Install Dependencies
 
