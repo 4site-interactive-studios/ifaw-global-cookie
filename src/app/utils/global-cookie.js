@@ -17,7 +17,7 @@ export class GlobalCookie {
     let domain = new URL(crossDomainCookie);
     this.cds = new CrossDomainStorage(domain.origin, "/");
     // Create a cross-domain 1 year cookie
-    const expires = 365 * 24 * 60 * 60 * 1000;
+    const expires = (new Date(Date.now() + 365*24*60*60*1000).toUTCString());
     this.cds.storeValue(crossDomainCookieName, 1, expires);
     console.log("Global Cookie", expires);
   }
